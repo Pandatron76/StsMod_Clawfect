@@ -1,0 +1,70 @@
+{
+  "VintageClaw": {
+    "NAME": "Vintage Claw",
+    "DESCRIPTION": "Deal !D! damage. NL Increase the damage of ALL Claw cards by !M! this combat."
+  },
+  "ClawAndTear": {
+    "NAME": "Claw and Tear",
+    "DESCRIPTION": "Deal !D! damage to a random enemy 2 times. NL Increase the damage of ALL Claw cards by !M! this combat."
+  },
+  "ClawCell": {
+    "NAME": "Claw Cell",
+    "DESCRIPTION": "Deal !D! damage and apply !M! Vulnerable.  NL Increase the damage of ALL Claw cards by !M! this combat."
+  },
+  "ClawpileDriver": {
+    "NAME": "Clawpile Driver",
+    "DESCRIPTION": "Deal !D! damage. Draw 1 card for each unique Orb you have. NL Increase the damage of ALL Claw cards by !M! this combat."
+  },
+  "ClawForTheEyes": {
+    "NAME": "Claw for the Eyes",
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy intends to attack, apply !M! Weak. NL Increase the damage of ALL Claw cards by !M! this combat."
+  },
+  "ClawingBeam": {
+    "NAME": "Clawing Beam",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Draw 1 card.  NL Increase the damage of ALL Claw cards by !M! this combat."
+  },
+  "ClawAndGloom": {
+    "NAME": "Claw and Gloom",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Channel 1 Dark. NL Increase the damage of ALL Claw cards by !M! this combat."
+  },
+  "ClawForOne": {
+    "NAME": "Claw for One",
+    "DESCRIPTION": "Deal !D! damage. NL Put all Cost 0 cards from your discard pile into your hand. NL Increase the damage of ALL Claw cards by !M! this combat."
+  },
+  "ClawLightning": {
+    "NAME": "Claw Lightning",
+    "DESCRIPTION": "Deal !D! damage. NL Channel 1 Lightning. NL Increase the damage of ALL Claw cards by !M! this combat."
+  },
+  "Clawline": {
+    "NAME": "Clawline",
+    "DESCRIPTION": "Deal !D! damage. NL Whenever you play this card, reduce its cost by 1 for this combat. NL Increase the damage of ALL Claw cards by !M! this combat."
+  },
+  "Clawrage": {
+    "NAME": "Clawrage",
+    "DESCRIPTION": "Deal !D! damage for each Channeled Orb. NL Increase the damage of ALL Claw cards by !M! this combat."
+  },
+  "Clawseye": {
+    "NAME": "Clawseye",
+    "DESCRIPTION": "Deal !D! damage. NL Apply 1(2) Lock-On. NL Increase the damage of ALL Claw cards by !M! this combat."
+  },
+  "ClawSnap": {
+    "NAME": "Claw Snap",
+    "DESCRIPTION": "Deal !D! damage. NL Channel 1 Frost. NL Increase the damage of ALL Claw cards by !M! this combat."
+  },
+  "Clawter": {
+    "NAME": "Clawter",
+    "DESCRIPTION": "Remove all Block from an enemy. NL Deal !D! damage. NL Increase the damage of ALL Claw cards by !M! this combat."
+  },
+  "Clawzard": {
+    "NAME": "Clawzard",
+    "DESCRIPTION": "Deal damage equal to !D! times the Frost Channeled this combat to ALL enemies. NL Increase the damage of ALL Claw cards by !M! this combat."
+  },
+  "FTC": {
+    "NAME": "FTC",
+    "DESCRIPTION": "Deal !D! damage. NL If you have played less than 3(4) cards this turn, draw 1 card. NL Increase the damage of ALL Claw cards by !M! this combat."
+  },
+  "Sclawrape": {
+    "NAME": "Sclawrape",
+    "DESCRIPTION": "Deal !D! damage. Draw !M! cards. Discard all cards drawn this way that do not cost 0. NL Increase the damage of ALL Claw cards by !M! this combat."
+  }
+}
