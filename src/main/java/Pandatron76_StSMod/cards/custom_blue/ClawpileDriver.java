@@ -25,6 +25,7 @@ public class ClawpileDriver extends CustomCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final int COST = 1;
     public static final int ATTACK_DMG = -7;
+    public static final int DRAWS_PER_ORB = 1;
 
     public ClawpileDriver() {
 
@@ -44,7 +45,7 @@ public class ClawpileDriver extends CustomCard {
         AbstractDungeon.actionManager.addToBottom(new DamageAction(monster, new DamageInfo(
                 player, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
 
-        AbstractDungeon.actionManager.addToBottom(new CompileDriverAction(player, this.magicNumber));
+        AbstractDungeon.actionManager.addToBottom(new CompileDriverAction(player, DRAWS_PER_ORB));
         AbstractDungeon.actionManager.addToBottom(new ClawTagAction(this, this.magicNumber));
     }
 

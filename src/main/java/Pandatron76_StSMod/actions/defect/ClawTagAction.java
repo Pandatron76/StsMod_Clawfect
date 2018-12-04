@@ -21,6 +21,10 @@ public class ClawTagAction extends AbstractGameAction {
     public void update(){
 
         if (this.duration == Settings.ACTION_DUR_FAST){
+
+            this.card.baseDamage += this.amount;
+            this.card.applyPowers();
+
             for (AbstractCard card : AbstractDungeon.player.discardPile.group) {
                 if ((card.tags.contains(CardTagsEnum.CLAW)))
                 {

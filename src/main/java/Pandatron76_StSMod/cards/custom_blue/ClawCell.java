@@ -25,6 +25,7 @@ public class ClawCell extends CustomCard {
     public static final int COST = 0;
     public static final int ATTACK_DMG = -2;
     public static final int MAGIC_NUMBER = 1;
+    public static final int VUL_NUM = 1;
 
     public ClawCell() {
 
@@ -43,7 +44,7 @@ public class ClawCell extends CustomCard {
                 monster, new DamageInfo(player, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
 
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(monster, player, new VulnerablePower(
-                monster, this.magicNumber, false), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
+                monster, VUL_NUM, false), VUL_NUM, true, AbstractGameAction.AttackEffect.NONE));
 
         AbstractDungeon.actionManager.addToBottom(new ClawTagAction(this, this.magicNumber));
     }
@@ -58,6 +59,7 @@ public class ClawCell extends CustomCard {
         if (!this.upgraded)
         {
             upgradeDamage(1);
+            upgradeMagicNumber(1);
             upgradeName();
         }
     }

@@ -1,6 +1,7 @@
 package Pandatron76_StSMod.cards.custom_blue;
 
 import Pandatron76_StSMod.Clawfect;
+import Pandatron76_StSMod.actions.defect.ClawTagAction;
 import basemod.abstracts.CustomCard;
 
 import Pandatron76_StSMod.patches.CardTagsEnum;
@@ -61,6 +62,7 @@ public class Clawzard extends CustomCard {
                     AbstractDungeon.getMonsters().shouldFlipVfx()), 1.0F));
         }
         AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction(player, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.BLUNT_HEAVY, false));
+        AbstractDungeon.actionManager.addToBottom(new ClawTagAction(this, this.magicNumber));
     }
 
     public void applyPowers()

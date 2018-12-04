@@ -13,6 +13,7 @@ public class getStartingDeckPatch {
         //Clear out the original Deck
         __result.clear();
 
+
         for(int i = 0; i <=4; i++) {
             __result.add("VintageClaw");
         }
@@ -21,8 +22,23 @@ public class getStartingDeckPatch {
             __result.add("Defend_B");
         }
 
-        // Test Deck
-        // Comment out the real deck and make a test deck below
+        /*
+        Test Deck
+
+        Comment out the real deck and make a test deck below
+        Example:
+        __result.add("Strike_B");
+        __result.add("Strike_B");
+        __result.add("Strike_B");
+        __result.add("Strike_B");
+        __result.add("Defend_B");
+        __result.add("Defend_B");
+        __result.add("Defend_B");
+        __result.add("Defend_B");
+        __result.add("Zap");
+        __result.add("Dualcast");
+
+         */
 
         return __result;
     }
