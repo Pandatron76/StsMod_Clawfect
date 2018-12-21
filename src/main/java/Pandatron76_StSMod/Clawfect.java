@@ -3,6 +3,7 @@ package Pandatron76_StSMod;
 import Pandatron76_StSMod.cards.custom_blue.*;
 import Pandatron76_StSMod.custom_relics.DRClaw;
 import basemod.BaseMod;
+import basemod.ModLabel;
 import basemod.helpers.RelicType;
 import basemod.interfaces.EditCardsSubscriber;
 import basemod.interfaces.EditRelicsSubscriber;
@@ -36,8 +37,11 @@ public class Clawfect implements
     public static final String AUTHOR = "Pandatron76";
     public static final String DESCRIPTION = "v1.0.0\n Defect loves his claws <3. Custom mod for friend";
 
+    public static final float TBD_LABEL_X = 350.0f;
+    public static final float TBD_LABEL_Y = 750.0f;
+
     public static final String ASSETS_FOLDER = "img";
-    public static final String BADGE_IMG = "/badges/CustomAndyBadge.png";
+    public static final String BADGE_IMG = "/badges/ClawfectBadge.png";
 
     public static Boolean RestConfirmPopupFlag = true;
 
@@ -99,7 +103,7 @@ public class Clawfect implements
         UnlockTracker.unlockCard(FTC.ID);
         UnlockTracker.unlockCard(Sclawrape.ID);
 
-        //Remove the non-claw related counter parts
+        //Remove the non-claw related counter parts (originals)
         BaseMod.removeCard("Gash", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("Ball Lightning", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("Barrage", AbstractCard.CardColor.BLUE);
@@ -117,12 +121,6 @@ public class Clawfect implements
         BaseMod.removeCard("FTL", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("Scrape", AbstractCard.CardColor.BLUE);
 
-        /* Cards that cannot be removed from the based pool because they are unlocks
-        BaseMod.removeCard("Rebound", AbstractCard.CardColor.BLUE);
-        BaseMod.removeCard("Sunder", AbstractCard.CardColor.BLUE);
-        BaseMod.removeCard("HyperBeam", AbstractCard.CardColor.BLUE);
-        BaseMod.removeCard("Core Surge", AbstractCard.CardColor.BLUE);
-        */
     }
 
     @Override
@@ -143,13 +141,18 @@ public class Clawfect implements
 
         Texture badgeTexture = new Texture(makePath(BADGE_IMG));
         ModPanel settingsPanel = new ModPanel();
+        ModLabel TBD_Label = new ModLabel("Nothing here at this time. Enjoy the mod :)",
+                TBD_LABEL_X,
+                TBD_LABEL_Y,
+                settingsPanel, me -> {});
+
+        settingsPanel.addUIElement(TBD_Label);
 
         BaseMod.registerModBadge(badgeTexture, MODNAME, AUTHOR, DESCRIPTION , settingsPanel);
 
         Settings.isDailyRun = false;
         Settings.isTrial = false;
         Settings.isDemo = false;
-
     }
 
     public static final String makeCardImagePath(String cardName) {
@@ -173,10 +176,6 @@ public class Clawfect implements
 
     private static boolean hasExtension(String filename) {
         return filename.lastIndexOf('.') > 0;
-    }
-
-    private void setBoolean(Boolean bool){
-        RestConfirmPopupFlag = bool;
     }
 
 }

@@ -69,6 +69,4 @@ public class ClawSnap extends CustomCard {
             upgradeDamage(2);
         }
     }
-
-
 }

@@ -6,7 +6,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
-//Effectively this is a copy of the 'GashAction'. The difference is checking for CardTagsEnum 'Claw'
+//Effectively this is a copy of the 'GashAction'. The difference is checking for CardTagsEnum 'CLAW'
 public class ClawTagAction extends AbstractGameAction {
 
     private AbstractCard card;

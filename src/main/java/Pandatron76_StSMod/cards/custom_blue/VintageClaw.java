@@ -69,7 +69,4 @@ public class VintageClaw extends CustomCard {
             upgradeDamage(2);
         }
     }
-
-
-
 }

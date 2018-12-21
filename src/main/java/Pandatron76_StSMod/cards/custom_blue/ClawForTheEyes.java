@@ -59,5 +59,4 @@ public class ClawForTheEyes extends CustomCard {
             upgradeName();
         }
     }
-
 }

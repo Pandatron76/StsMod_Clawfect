@@ -40,8 +40,8 @@ public class ClawCell extends CustomCard {
 
     public void use(AbstractPlayer player, AbstractMonster monster)
     {
-        AbstractDungeon.actionManager.addToBottom(new DamageAction(
-                monster, new DamageInfo(player, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+        AbstractDungeon.actionManager.addToBottom(new DamageAction(monster, new DamageInfo(
+                        player, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
 
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(monster, player, new VulnerablePower(
                 monster, VUL_NUM, false), VUL_NUM, true, AbstractGameAction.AttackEffect.NONE));
@@ -63,8 +63,4 @@ public class ClawCell extends CustomCard {
             upgradeName();
         }
     }
-
-
-
-
 }

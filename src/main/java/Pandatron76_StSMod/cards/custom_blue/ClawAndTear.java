@@ -23,7 +23,6 @@ public class ClawAndTear extends CustomCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 0;
     private static final int ATTACK_DMG = -7;
-    private static final int NUM_ATTACKS = 2;
 
     public ClawAndTear() {
 
@@ -59,6 +58,4 @@ public class ClawAndTear extends CustomCard {
             upgradeDamage(2);
         }
     }
-
-
 }

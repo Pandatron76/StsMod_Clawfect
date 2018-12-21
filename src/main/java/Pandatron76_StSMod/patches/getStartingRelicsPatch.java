@@ -13,13 +13,14 @@ public class getStartingRelicsPatch {
     public static ArrayList<String> Postfix(ArrayList<String> __result, Defect __instance) {
         //Clear out the original relics
         __result.clear();
-        //Add the custom relic 'Golden Marble' to the starting relics
+        //Add the custom relic 'Dr. Claw' to the starting relics
         __result.add(DRClaw.ID);
-        //Remove the 'Golden Marble' from the relic tracker
+        //Remove the 'Dr. Claw' from the relic tracker
         UnlockTracker.markRelicAsSeen(DRClaw.ID);
-        //Remove the 'Burning Blood' from the relic tracker
+
+        //Remove the 'Cracked Core' from the relic tracker
         UnlockTracker.markRelicAsSeen("Cracked Core");
-        //Return the relics that Ironclad will start with
+        //Return the relics that Defect will start with
         return __result;
     }
 }

@@ -56,5 +56,4 @@ public class Clawrage extends CustomCard {
             upgradeDamage(2);
         }
     }
-
 }

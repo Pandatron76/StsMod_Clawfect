@@ -2,6 +2,7 @@ package Pandatron76_StSMod.patches;
 
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
 import com.megacrit.cardcrawl.characters.Defect;
+import com.megacrit.cardcrawl.helpers.CardLibrary;
 
 import java.util.ArrayList;
 
@@ -13,32 +14,17 @@ public class getStartingDeckPatch {
         //Clear out the original Deck
         __result.clear();
 
+        // Defect's starting deck will be 10 cards (5 'Claws' and 5 'Defends')
 
+        // Add Claws. We use a custom Claw so we can add a claw tag to it
         for(int i = 0; i <=4; i++) {
             __result.add("VintageClaw");
         }
 
+        // Add Defends.
         for(int i = 0; i <=4; i++) {
             __result.add("Defend_B");
         }
-
-        /*
-        Test Deck
-
-        Comment out the real deck and make a test deck below
-        Example:
-        __result.add("Strike_B");
-        __result.add("Strike_B");
-        __result.add("Strike_B");
-        __result.add("Strike_B");
-        __result.add("Defend_B");
-        __result.add("Defend_B");
-        __result.add("Defend_B");
-        __result.add("Defend_B");
-        __result.add("Zap");
-        __result.add("Dualcast");
-
-         */
 
         return __result;
     }

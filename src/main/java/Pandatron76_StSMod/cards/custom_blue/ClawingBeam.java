@@ -63,5 +63,4 @@ public class ClawingBeam extends CustomCard {
             upgradeDamage(3);
         }
     }
-
 }

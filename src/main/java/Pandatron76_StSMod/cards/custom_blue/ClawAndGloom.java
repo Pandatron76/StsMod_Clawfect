@@ -30,8 +30,10 @@ public class ClawAndGloom extends CustomCard {
 
     public ClawAndGloom(){
 
-        super(ID, NAME, Clawfect.makeCardImagePath(ID), COST, DESCRIPTION,
-                AbstractCard.CardType.ATTACK, AbstractCard.CardColor.BLUE, AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.ALL_ENEMY);
+        super(ID, NAME,
+                Clawfect.makeCardImagePath(ID), COST,DESCRIPTION,
+                AbstractCard.CardType.ATTACK, AbstractCard.CardColor.BLUE,
+                AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.ALL_ENEMY);
 
         this.showEvokeValue = true;
         this.showEvokeOrbCount = 1;
@@ -46,7 +48,9 @@ public class ClawAndGloom extends CustomCard {
     {
         AbstractDungeon.actionManager.addToBottom(new SFXAction("ATTACK_HEAVY"));
         AbstractDungeon.actionManager.addToBottom(new VFXAction(player, new CleaveEffect(), 0.1F));
-        AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction(player, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.NONE));
+        AbstractDungeon.actionManager.addToBottom(
+                new DamageAllEnemiesAction(
+                        player, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.NONE));
 
         AbstractDungeon.actionManager.addToBottom(new ChannelAction(new Dark()));
         AbstractDungeon.actionManager.addToBottom(new ClawTagAction(this, this.magicNumber));
