@@ -19,7 +19,8 @@ import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
 
 public class ClawingBeam extends CustomCard {
 
-    public static final String ID = "ClawingBeam";
+    public static final String ID = "Clawfect:ClawingBeam";
+    public static final String IMG_NAME = ID.split(":")[1];
     public static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
@@ -29,7 +30,7 @@ public class ClawingBeam extends CustomCard {
 
     public ClawingBeam(){
 
-        super(ID, NAME, Clawfect.makeCardImagePath(ID), COST, DESCRIPTION,
+        super(ID, NAME, Clawfect.makeCardImagePath(IMG_NAME), COST, DESCRIPTION,
                 AbstractCard.CardType.ATTACK, CardColor.BLUE, CardRarity.COMMON, CardTarget.ALL_ENEMY);
 
         this.baseDamage = ATTACK_DMG;

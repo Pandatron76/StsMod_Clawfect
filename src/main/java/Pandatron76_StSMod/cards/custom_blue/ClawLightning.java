@@ -24,7 +24,8 @@ import Pandatron76_StSMod.actions.defect.ClawTagAction;
 
 public class ClawLightning extends CustomCard {
 
-    public static final String ID = "ClawLightning";
+    public static final String ID = "Clawfect:ClawLightning";
+    public static final String IMG_NAME = ID.split(":")[1];
     public static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
@@ -33,9 +34,8 @@ public class ClawLightning extends CustomCard {
 
     public ClawLightning() {
 
-        super(ID, NAME, Clawfect.makeCardImagePath(ID), COST, DESCRIPTION,
+        super(ID, NAME, Clawfect.makeCardImagePath(IMG_NAME), COST, DESCRIPTION,
                 AbstractCard.CardType.ATTACK, CardColor.BLUE, CardRarity.COMMON, CardTarget.ENEMY);
-
         this.showEvokeValue = true;
         this.showEvokeOrbCount = 1;
         this.baseMagicNumber = 2;

@@ -15,7 +15,8 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 public class Clawrage extends CustomCard {
 
-    public static final String ID = "Clawrage";
+    public static final String ID = "Clawfect:Clawrage";
+    public static final String IMG_NAME = ID.split(":")[1];
     public static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
@@ -24,7 +25,7 @@ public class Clawrage extends CustomCard {
 
     public Clawrage(){
 
-        super(ID, NAME, Clawfect.makeCardImagePath(ID), COST, DESCRIPTION,
+        super(ID, NAME, Clawfect.makeCardImagePath(IMG_NAME), COST, DESCRIPTION,
                 AbstractCard.CardType.ATTACK, CardColor.BLUE, CardRarity.COMMON, CardTarget.ENEMY);
 
         this.baseDamage = ATTACK_DMG;

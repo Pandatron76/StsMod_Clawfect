@@ -20,7 +20,8 @@ import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
 
 public class ClawAndGloom extends CustomCard {
 
-    public static final String ID = "ClawAndGloom";
+    public static final String ID = "Clawfect:ClawAndGloom";
+    public static final String IMG_NAME = ID.split(":")[1];
     public static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
@@ -31,7 +32,7 @@ public class ClawAndGloom extends CustomCard {
     public ClawAndGloom(){
 
         super(ID, NAME,
-                Clawfect.makeCardImagePath(ID), COST,DESCRIPTION,
+                Clawfect.makeCardImagePath(IMG_NAME), COST,DESCRIPTION,
                 AbstractCard.CardType.ATTACK, AbstractCard.CardColor.BLUE,
                 AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.ALL_ENEMY);
 

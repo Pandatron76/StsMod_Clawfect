@@ -67,7 +67,7 @@ public class Clawfect implements
     public void receiveEditCards() {
 
         //Add the new Claw cards
-        BaseMod.addCard(new VintageClaw());
+        //BaseMod.addCard(new VintageClaw());
         BaseMod.addCard(new ClawLightning());
         BaseMod.addCard(new Clawrage());
         BaseMod.addCard(new ClawCell());
@@ -82,8 +82,7 @@ public class Clawfect implements
         BaseMod.addCard(new Clawter());
         BaseMod.addCard(new Clawzard());
         BaseMod.addCard(new FTC());
-        BaseMod.addCard(new Sclawrape());
-
+        BaseMod.addCard(new ScrapingClaw());
 
         //Unlock all the newly added claw cards
         UnlockTracker.unlockCard(VintageClaw.ID);
@@ -101,7 +100,7 @@ public class Clawfect implements
         UnlockTracker.unlockCard(Clawter.ID);
         UnlockTracker.unlockCard(Clawzard.ID);
         UnlockTracker.unlockCard(FTC.ID);
-        UnlockTracker.unlockCard(Sclawrape.ID);
+        UnlockTracker.unlockCard(ScrapingClaw.ID);
 
         //Remove the non-claw related counter parts (originals)
         BaseMod.removeCard("Gash", AbstractCard.CardColor.BLUE);
@@ -120,7 +119,6 @@ public class Clawfect implements
         BaseMod.removeCard("Blizzard", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("FTL", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("Scrape", AbstractCard.CardColor.BLUE);
-
     }
 
     @Override
