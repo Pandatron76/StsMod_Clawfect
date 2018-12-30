@@ -18,19 +18,19 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 public class Clawline extends CustomCard {
 
-    public static final String ID = "Clawline";
+    public static final String ID = "Clawfect:Clawline";
+    public static final String IMG_NAME = ID.split(":")[1];
     public static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final int COST = 0;
-    private static final int COST_DECREASE = 1;
     public static final int ATTACK_DMG = -15;
     public static final int MAGIC_NUMBER = 1;
 
 
     public Clawline() {
 
-        super(ID, NAME, Clawfect.makeCardImagePath(ID), COST, DESCRIPTION,
+        super(ID, NAME, Clawfect.makeCardImagePath(IMG_NAME), COST, DESCRIPTION,
                 AbstractCard.CardType.ATTACK, CardColor.BLUE, CardRarity.COMMON, CardTarget.ENEMY);
 
         this.baseDamage = ATTACK_DMG;

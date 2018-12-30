@@ -18,9 +18,10 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.combat.ScrapeEffect;
 
-public class Sclawrape extends CustomCard {
+public class ScrapingClaw extends CustomCard {
 
-    public static final String ID = "Sclawrape";
+    public static final String ID = "Clawfect:ScrapingClaw";
+    public static final String IMG_NAME = ID.split(":")[1];
     public static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
@@ -28,9 +29,9 @@ public class Sclawrape extends CustomCard {
     public static final int ATTACK_DMG = -10;
     public static final int MAGIC_NUMBER = 1;
 
-    public Sclawrape(){
+    public ScrapingClaw(){
 
-        super(ID, NAME, Clawfect.makeCardImagePath(ID), COST, DESCRIPTION,
+        super(ID, NAME, Clawfect.makeCardImagePath(IMG_NAME), COST, DESCRIPTION,
                 AbstractCard.CardType.ATTACK, AbstractCard.CardColor.BLUE, AbstractCard.CardRarity.COMMON, AbstractCard.CardTarget.ENEMY);
 
         this.baseDamage = ATTACK_DMG;
@@ -53,7 +54,7 @@ public class Sclawrape extends CustomCard {
 
     public AbstractCard makeCopy()
     {
-        return new Sclawrape();
+        return new ScrapingClaw();
     }
 
     public void upgrade()

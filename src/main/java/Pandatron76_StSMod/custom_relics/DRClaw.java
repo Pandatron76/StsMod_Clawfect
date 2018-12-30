@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 
 public class DRClaw extends CustomRelic {
 
-    public static final String ID = "DRClaw";
+    public static final String ID = "Clawfect:DRClaw";
     public static final String IMG = "img/clawfect/custom_relics/DRClaw.png";
 
     public DRClaw(){

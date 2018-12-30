@@ -15,13 +15,12 @@ public class getStartingDeckPatch {
         __result.clear();
 
         // Defect's starting deck will be 10 cards (5 'Claws' and 5 'Defends')
-
-        // Add Claws. We use a custom Claw so we can add a claw tag to it
+        // Add Claws (Its ID is "Gash")
         for(int i = 0; i <=4; i++) {
-            __result.add("VintageClaw");
+            __result.add("Gash");
         }
 
-        // Add Defends.
+        // Add Defends
         for(int i = 0; i <=4; i++) {
             __result.add("Defend_B");
         }

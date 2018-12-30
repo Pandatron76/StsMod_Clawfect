@@ -19,7 +19,8 @@ import static com.megacrit.cardcrawl.cards.blue.FTL.EXTENDED_DESCRIPTION;
 
 public class FTC extends CustomCard {
 
-    public static final String ID = "FTC";
+    public static final String ID = "Clawfect:FTC";
+    public static final String IMG_NAME = ID.split(":")[1];
     public static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
@@ -29,7 +30,7 @@ public class FTC extends CustomCard {
 
     public FTC(){
 
-        super(ID, NAME, Clawfect.makeCardImagePath(ID), COST, DESCRIPTION,
+        super(ID, NAME, Clawfect.makeCardImagePath(IMG_NAME), COST, DESCRIPTION,
                 AbstractCard.CardType.ATTACK, CardColor.BLUE, CardRarity.COMMON, CardTarget.ENEMY);
 
         this.baseDamage = ATTACK_DMG;
