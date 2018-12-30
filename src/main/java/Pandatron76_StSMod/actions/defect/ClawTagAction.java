@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
 //Effectively this is a copy of the 'GashAction'. The difference is checking for CardTagsEnum 'CLAW'
+// TODO: Update so it can accept any cardTag to scale any type(s) of cards.
 public class ClawTagAction extends AbstractGameAction {
 
     private AbstractCard card;

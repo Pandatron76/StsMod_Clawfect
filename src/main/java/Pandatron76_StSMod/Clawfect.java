@@ -32,7 +32,7 @@ public class Clawfect implements
         EditStringsSubscriber,
         EditRelicsSubscriber {
 
-    public static final Logger logger = LogManager.getLogger(Clawfect.class.getName());
+    public static final Logger logger = LogManager.getLogger(Clawfect.class.getSimpleName());
     public static final String MODNAME = "Pandatron76_StSMod.Clawfect";
     public static final String AUTHOR = "Pandatron76";
     public static final String DESCRIPTION = "v1.0.0\n Defect loves his claws <3. Custom mod for friend";
@@ -67,7 +67,6 @@ public class Clawfect implements
     public void receiveEditCards() {
 
         //Add the new Claw cards
-        //BaseMod.addCard(new VintageClaw());
         BaseMod.addCard(new ClawLightning());
         BaseMod.addCard(new Clawrage());
         BaseMod.addCard(new ClawCell());
@@ -85,7 +84,6 @@ public class Clawfect implements
         BaseMod.addCard(new ScrapingClaw());
 
         //Unlock all the newly added claw cards
-        UnlockTracker.unlockCard(VintageClaw.ID);
         UnlockTracker.unlockCard(ClawLightning.ID);
         UnlockTracker.unlockCard(Clawrage.ID);
         UnlockTracker.unlockCard(ClawCell.ID);
@@ -103,7 +101,6 @@ public class Clawfect implements
         UnlockTracker.unlockCard(ScrapingClaw.ID);
 
         //Remove the non-claw related counter parts (originals)
-        BaseMod.removeCard("Gash", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("Ball Lightning", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("Barrage", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("Beam Cell", AbstractCard.CardColor.BLUE);
