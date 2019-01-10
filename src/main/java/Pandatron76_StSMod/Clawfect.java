@@ -79,7 +79,8 @@ public class Clawfect implements
         BaseMod.addCard(new ClawForOne());
         BaseMod.addCard(new Clawline());
         BaseMod.addCard(new Clawter());
-        BaseMod.addCard(new Clawzard());
+        //TODO: Clawzard currently does not scale properly with Frost Orbs and Claws. Removing for now.
+        //BaseMod.addCard(new Clawzard());
         BaseMod.addCard(new FTC());
         BaseMod.addCard(new ScrapingClaw());
 
@@ -96,7 +97,7 @@ public class Clawfect implements
         UnlockTracker.unlockCard(ClawForOne.ID);
         UnlockTracker.unlockCard(Clawline.ID);
         UnlockTracker.unlockCard(Clawter.ID);
-        UnlockTracker.unlockCard(Clawzard.ID);
+        //UnlockTracker.unlockCard(Clawzard.ID);
         UnlockTracker.unlockCard(FTC.ID);
         UnlockTracker.unlockCard(ScrapingClaw.ID);
 
@@ -113,7 +114,8 @@ public class Clawfect implements
         BaseMod.removeCard("All For One", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("Streamline", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("Melter", AbstractCard.CardColor.BLUE);
-        BaseMod.removeCard("Blizzard", AbstractCard.CardColor.BLUE);
+        // TODO: Until Clawzard is fixed, adding Blizzard back in.
+        //BaseMod.removeCard("Blizzard", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("FTL", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("Scrape", AbstractCard.CardColor.BLUE);
     }
@@ -121,11 +123,11 @@ public class Clawfect implements
     @Override
     public void receiveEditStrings(){
 
-        String relicStrings = Gdx.files.internal("localization/Custom-RelicStrings.json").readString(
+        String relicStrings = Gdx.files.internal("localization/Clawfect-RelicStrings.json").readString(
                 String.valueOf(StandardCharsets.UTF_8));
         BaseMod.loadCustomStrings(RelicStrings.class, relicStrings);
 
-        String cardStrings = Gdx.files.internal("localization/CustomDefect-CardStrings.json").readString(
+        String cardStrings = Gdx.files.internal("localization/Clawfect-CardStrings.json").readString(
                 String.valueOf(StandardCharsets.UTF_8));
         BaseMod.loadCustomStrings(CardStrings.class, cardStrings);
 
@@ -152,6 +154,14 @@ public class Clawfect implements
 
     public static final String makeCardImagePath(String cardName) {
         return makePath("cards/" + cardName);
+    }
+
+    public static final String makeRelicImagePath(String relicName) {
+        return makePath("custom_relics/" + relicName);
+    }
+
+    public static final String makeRelicOutlineImagePath(String relicName) {
+        return makePath("custom_relics/outline/" + relicName);
     }
 
     /**
