@@ -1,6 +1,7 @@
 package Pandatron76_StSMod.cards.custom_blue;
 
 import Pandatron76_StSMod.Clawfect;
+import Pandatron76_StSMod.actions.defect.ClawTagAction;
 import Pandatron76_StSMod.patches.CardTagsEnum;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -40,7 +41,9 @@ public class Clawter extends CustomCard {
     {
         AbstractDungeon.actionManager.addToBottom(new RemoveAllBlockAction(monster, player));
         AbstractDungeon.actionManager.addToBottom(new DamageAction(
-                monster, new DamageInfo(player, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
+                monster, new DamageInfo(
+                        player, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
+        AbstractDungeon.actionManager.addToBottom(new ClawTagAction(this, this.magicNumber));
     }
 
     public AbstractCard makeCopy()
