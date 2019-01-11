@@ -23,9 +23,9 @@ public class Clawline extends CustomCard {
     public static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    public static final int COST = 0;
-    public static final int ATTACK_DMG = -15;
-    public static final int MAGIC_NUMBER = 1;
+    public static final int COST = 2;
+    public static final int ATTACK_DMG = -10;
+    public static final int MAGIC_NUMBER = 3;
 
 
     public Clawline() {
@@ -57,7 +57,7 @@ public class Clawline extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(3);
+            upgradeDamage(5);
         }
     }
 }
