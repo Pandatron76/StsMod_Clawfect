@@ -3,7 +3,7 @@
   "name": "Clawfect",
   "author_list": ["Pandatron76"],
   "description": "Defect loves his claws <3. Custom mod for friend",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "sts_version": "12-20-2018",
   "mts_version": "  3.6.0",
   "dependencies": ["basemod"]

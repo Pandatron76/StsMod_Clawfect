@@ -25,6 +25,11 @@ public class DRClaw extends CustomRelic {
         AbstractDungeon.player.energy.energyMaster -= 1;
     }
 
+    public void onUnequip()
+    {
+        AbstractDungeon.player.energy.energyMaster += 1;
+    }
+
     @Override
     public String getUpdatedDescription(){
         return DESCRIPTIONS[0];
